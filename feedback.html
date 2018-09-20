@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div class="page-feed-wrapper">
+        <header class="page-header">
+            <nav class="main-navigation">
+                    <button class="main-navigation__button--hide" type="button">&#215;</button>
+                <ul class="site-navigation__list">
+                    <li class="site-navigation__item hide-elem">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-navigation__item hide-elem"><a href="introduce.html">Фото и видео</a></li>
+                    <li class="site-navigation__item hide-elem"><a href="feedback.html">Форма отзыва</a></li>
+                    <li class="site-navigation__item hide-elem"><a href="https://htmlacademy.ru/">HTML academy</a></li>
+                    <li class="index-logo">
+                        <a href="index.html">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/svg/logo-desktop.svg">
+                                <img class="logo-block__image" src="img/svg/logo-sedona.svg" width="187" height="96" alt="Логотип: Sity of Sedona">
+                            </picture>
+                        </a>
+                            <button class="logo-block__button--show" type="button">&#9776;</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="intro-page">
+            <h1 class="visually-hidden">Страница с формой отзыва клиентов</h1>
+            <div class="index-images">
+                <img class="index-images__preview-image" width="229" height="39" src="img/rastr/photo-page/seona-text.svg" alt="Надпись: Sedona">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="img/svg/underline-desk.svg">
+                    <img class="index-images__underline-img" src="img/svg/underl_mobi.svg" alt="Декоративная картинка">
+                </picture>
+            </div>
+            <section class="info-feedback">
+                <h2 class="index-title">Оставьте свой отзыв</h2>
+                <p class="info__preview">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            </section>
+            <section class="main-form">
+                <h2 class="visually-hidden">Поделитесь своими впечатлениями заполнив форму!</h2>
+                <form class="form-output" id="big-form" action="#" method="post">
+                    <ul class="form-list">
+                        <li class="form-list__item intro-yself">
+                            <fieldset class="user-name-info">
+                                <legend class="visually-hidden">Представьтесь:</legend>
+                                <p class="feed-legend intro-title">Представьтесь:</p>
+                                <ul class="inputsarea-list">
+                                    <li class="inputsarea-list__item name-info">
+                                        <label class="name-info__label" for="user-name">ИМЯ*</label>
+                                        <input type="text" name="user-name" id="user-name" placeholder="Петр">
+                                    </li>
+                                    <li class="inputsarea-list__item name-info">
+                                        <label class="name-info__label" for="user-surname">ФАМИЛИЯ*:</label>
+                                        <input type="text" name="user-surname" id="user-surname" placeholder="Иванов">
+                                    </li>
+                                    <li class="inputsarea-list__item name-info">
+                                        <label class="name-info__label" for="last-name">Отчество:</label>
+                                        <input type="text" name="last-name" id="last-name" placeholder="Александрович">
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </li>
+                        <li class="form-list__item user-contacts-conatiner">
+                            <fieldset class="user-contacts">
+                                <legend class="visually-hidden">Контактная информация:</legend>
+                                <p class="feed-legend contact-legend">Контактная информация:</p>
+                                <ul class="inputsarea-list contact-list">
+                                    <li class="inputsarea-list__item contact-info">
+                                        <label class="contact-label phone" for="user-phone">Контактный телефон*:</label>
+                                        <input type="tel" name="user-phone" class="contact-phone-icon" id="user-phone" placeholder="Введите телефон">
+                                    </li>
+                                    <li class="inputsarea-list__item contact-info">
+                                        <label class="contact-label mail" for="user-mail">Электронная почта*:</label>
+                                        <input type="email" name="user-mail" class="contact-mail-icon" id="user-mail" placeholder="Введите e-mail">
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </li>
+                        <li class="form-list__item user-experience-container">
+                            <fieldset class="user-experience">
+                                <legend class="visually-hidden">Ваше Общее впечатление:</legend>
+                                <p class="feed-legend experience-title">Ваше Общее впечатление:</p>
+                                <ul class="inputsarea-list experience-list">
+                                    <li class="inputsarea-list__item experience__info">
+                                        <label class="experience-label" for="good-answer">
+                                            <input type="radio" name="pick-ue" id="good-answer" checked class="visually-hidden">
+                                            <span class="radio-indicator"></span>
+                                            Скорее положительное
+                                        </label>
+                                    </li>
+                                    <li class="inputsarea-list__item experience__info">
+                                        <label class="experience-label" for="nay-answer">
+                                            <input type="radio" name="pick-ue" id="nay-answer" class="visually-hidden">
+                                            <span class="radio-indicator"></span>
+                                            Скорее отрицательное
+                                        </label>
+                                    </li>
+                                    <li class="inputsarea-list__item experience__info">
+                                        <label class="experience-label" for="unselected">
+                                            <input type="radio" name="pick-ue" id="unselected" class="visually-hidden">
+                                            <span class="radio-indicator"></span>
+                                            Затрудняюсь ответить
+                                        </label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </li>
+                        <li class="form-list__item attraction-container">
+                            <fieldset class="attraction">
+                                <legend class="visually-hidden">Посещенные достопримечательности:</legend>
+                                <p class="feed-legend attraction-title">Посещенные достопримечательности:</p>
+                                <ul class="inputsarea-list attraction-list">
+                                    <li class="inputsarea-list__item attraction-point">
+                                        <label class="attraction-label" for="bridge">
+                                            <input type="checkbox" name="bridge" id="bridge" checked class="visually-hidden">
+                                            <span class="checkbox-indicator"></span>
+                                            Мост Дьявола
+                                        </label>
+                                    </li>
+                                    <li class="inputsarea-list__item attraction-point">
+                                        <label class="attraction-label" for="mount">
+                                            <input type="checkbox" name="mount" id="mount" checked class="visually-hidden">
+                                            <span class="checkbox-indicator"></span>
+                                            Гора-Колокол
+                                        </label>
+                                    </li>
+                                    <li class="inputsarea-list__item attraction-point">
+                                        <label class="attraction-label" for="park">
+                                            <input type="checkbox" name="park" id="park" checked class="visually-hidden">
+                                            <span class="checkbox-indicator"></span>
+                                            Слайд-парк
+                                        </label>
+                                    </li>
+                                    <li class="inputsarea-list__item attraction-point">
+                                        <label class="attraction-label" for="rock">
+                                            <input type="checkbox" name="rock" id="rock" class="visually-hidden">
+                                            <span class="checkbox-indicator"></span>
+                                            Красные скалы
+                                        </label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </li>
+                        <li class="form-list__item input-area-container">
+                            <ul class="inputsarea-list">
+                                <li class="inputsarea-list__item">
+                                    <fieldset class="user-message">
+                                        <legend class="visually-hidden">Опишите свои эмоции:</legend>
+                                        <p class="feed-legend user-message-title">Опишите свои эмоции:</p>
+                                        <textarea class="user-message__input" form="big-form" placeholder="Опишите подробно все свои восторги"></textarea>
+                                    </fieldset>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="btn-action">
+                        <li>
+                            <button class="button send-button" type="submit">Отпраить отзыв</button>
+                        </li>
+                        <li>
+                            <p class="important-text">* — обязательные поля</p>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+        </main>
+        <footer class="page-footer container">
+                <div class="page-footer__wrapper">
+                <div class="page-footer__tags">
+                        <h3 class="hashtag">#VISITSEDONA</h3>
+                </div>
+                <div class="page-footer__social social">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="https://twitter.com/" class="social__link social__link--twitter">
+                                    <svg class="social-icon twitter" xmlns="http://www.w3.org/2000/svg" width="18" height="14"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://www.facebook.com/" class="social__link social__link--facebook">
+                                    <svg class="social-icon facebook" xmlns="http://www.w3.org/2000/svg" width="9" height="18"><path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="https://www.youtube.com/" class="social__link social__link--youtube">
+                                    <svg class="social-icon youtube" xmlns="http://www.w3.org/2000/svg" width="20" height="14"><path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/></svg>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="page-footer__copyright copyright">
+                        <a class="copyright__link" href="https://www.facebook.com/vladislavs.shevlyakov">@я-сделал</a>
+                </div>
+                </div>
+            </footer>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>

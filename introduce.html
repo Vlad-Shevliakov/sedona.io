@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="photo.css">
+</head>
+<body>
+    <div class="page-intro-wrapper">
+    <header class="page-header">
+        <nav class="main-navigation">
+                <button class="main-navigation__button--hide" type="button">&#215;</button>
+            <ul class="site-navigation__list">
+                <li class="site-navigation__item hide-elem">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="site-navigation__item hide-elem"><a href="introduce.html">Фото и видео</a></li>
+                <li class="site-navigation__item hide-elem"><a href="feedback.html">Форма отзыва</a></li>
+                <li class="site-navigation__item hide-elem"><a href="https://htmlacademy.ru/">HTML academy</a></li>
+                <li class="index-logo">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="img/svg/logo-desktop.svg">
+                            <img class="logo-block__image" src="img/svg/logo-sedona.svg" width="187" height="96" alt="Логотип: Sity of Sedona">
+                        </picture>
+                    </a>
+                        <button class="logo-block__button--show" type="button">&#9776;</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="intro-page">
+        <h1 class="visually-hidden">Седона - фото и видео</h1>
+        <div class="index-images">
+            <img class="index-images__preview-image" width="229" height="39" src="img/rastr/photo-page/seona-text.svg" alt="Надпись: Sedona">
+            <picture>
+                <source media="(min-width: 768px)" srcset="img/svg/underline-desk.svg">
+                <img class="index-images__underline-img" src="img/svg/underl_mobi.svg" alt="Декоративная картинка">
+            </picture>
+        </div>
+        <section class="info-photo">
+            <h2 class="index-title">Фото и Видео</h2>
+            <p class="info__preview">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </section>
+        <section class="photo-sedona">
+            <h2 class="visually-hidden">Фотогалерея Седоны</h2>
+            <ul class="main-images">
+                <li class="main-image__item">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="img/rastr/photo-page/sun-desktop-1x.jpg 1x,
+                        img/rastr/photo-page/sun-desktop2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/rastr/photo-page/sun-tablet-1x.jpg 1x, 
+                        img/rastr/photo-page/sun-tablet-2x.jpg 2x">
+                        <img src="img/rastr/photo-page/sun-1x.jpg" class="main-photo" srcset="img/rastr/photo-page/sun-2x.jpg 2x"
+                        alt="Фото солнечного заката Седоны" width="280" height="280">
+                    </picture>
+                    <div class="info-wrapper">
+                        <div class="photo-info">
+                            <p class="photo__title">Неродные просторы</p>
+                            <b class="photo__author">Автор фото: Борис</b>
+                            <p class="photo__count--likes">1350</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <ul class="pictures-list">
+                        <li class="pictures__item">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/rastr/photo-page/cactus-desktop-1x.jpg 1x,
+                                img/rastr/photo-page/cactus-desktop-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/rastr/photo-page/cactus-tablet-1x.jpg 1x,
+                                img/rastr/photo-page/cactus-tablet-2x.jpg 2x">
+                                <img src="img/rastr/photo-page/cactus-mobile-1x.jpg" class="small-image" srcset="img/rastr/photo-page/cactus-mobile-2x.jpg 2x" alt="Фото кактуса">
+                            </picture>
+                            <div class="info-wrapper">
+                                <div class="photo-info">
+                                    <p class="photo__title">Местная растительность</p>
+                                    <b class="photo__author">Автор фото: Сергей</b>
+                                    <p class="photo__count--likes">143</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pictures__item">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/rastr/photo-page/forest-desktop-1x.jpg 1x,
+                                img/rastr/photo-page/forest-desktop-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/rastr/photo-page/forest-tablet-1x.jpg 1x,
+                                img/rastr/photo-page/forest-tablet-2x.jpg 2x">
+                                <img src="img/rastr/photo-page/forest-mobile-1x.jpg" class="small-image" srcset="img/rastr/photo-page/forest-mobile-2x.jpg 2x" alt="Дорога на север">
+                            </picture>
+                            <div class="info-wrapper">
+                                <div class="photo-info">
+                                    <p class="photo__title">Дорога на север</p>
+                                    <b class="photo__author">Автор фото: Петр</b>
+                                    <p class="photo__count--likes">96</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pictures__item">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="img/rastr/photo-page/canyon-desktop-1x.jpg 1x,
+                                img/rastr/photo-page/canyon-desktop-2x.jpg 2x">
+                                <source media="(min-width: 768px)" srcset="img/rastr/photo-page/canyon-tablet-1x.jpg 1x,
+                                img/rastr/photo-page/canyon-tablet-2x.jpg 2x">
+                                <img src="img/rastr/photo-page/canyon-mobile-1x.jpg" class="small-image" srcset="img/rastr/photo-page/canyon-mobile-2x.jpg 2x" alt="Мост дьявола">
+                            </picture>
+                            <div class="info-wrapper">
+                                <div class="photo-info">
+                                    <p class="photo__title">Мост дьявола</p>
+                                    <b class="photo__author">Автор фото: Антон</b>
+                                    <p class="photo__count--likes">254</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="push-side">
+            <h3 class="push-side__title">Все еще сомневаетесь?</h3>
+            <p class="push-side__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <div class="push-side__video">
+                <iframe width="320" height="267" src="https://www.youtube.com/embed/YoHr3xI5YMI" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer container">
+            <div class="page-footer__wrapper">
+               <div class="page-footer__tags">
+                    <h3 class="hashtag">#VISITSEDONA</h3>
+               </div>
+               <div class="page-footer__social social">
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="https://twitter.com/" class="social__link social__link--twitter">
+                                <svg class="social-icon twitter" xmlns="http://www.w3.org/2000/svg" width="18" height="14"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.facebook.com/" class="social__link social__link--facebook">
+                                <svg class="social-icon facebook" xmlns="http://www.w3.org/2000/svg" width="9" height="18"><path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="https://www.youtube.com/" class="social__link social__link--youtube">
+                                <svg class="social-icon youtube" xmlns="http://www.w3.org/2000/svg" width="20" height="14"><path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+               </div>
+               <div class="page-footer__copyright copyright">
+                    <a class="copyright__link" href="https://www.facebook.com/vladislavs.shevlyakov">@я-сделал</a>
+               </div>
+            </div>
+        </footer>
+    <script src="main.js"></script>
+    </div>
+</body>
+</html>
+
+<!-- <img src="img/svg/like.svg" alt=""> -->
