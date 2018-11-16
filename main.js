@@ -14,3 +14,16 @@ let hiddenItemLength = hiddenItem.length;
             item.classList.add("hide-elem");
         }
     });
+
+
+// :)
+let text = 'Привет'
+let consoleStyle = [
+    'color: #00e600',
+    'font-size: 40px',
+    'text-decoration: underline',
+    'padding: 10px',
+    'border: 2px solid #ff1a1a',
+    'font-weight: 900',
+]
+console.log(`%c${text}`, consoleStyle.join(';'))
